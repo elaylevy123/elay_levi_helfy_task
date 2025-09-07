@@ -1,0 +1,37 @@
+.wrapper {
+    position: relative;
+}
+
+.navBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: color-mix(in oklab, var(--card) 80%, transparent);
+    box-shadow: var(--shadow-1);
+    cursor: pointer;
+
+    transition: transform .08s ease, background .2s ease, box-shadow .2s ease;
+    user-select: none;
+}
+.navBtn:hover { transform: translateY(-50%) scale(1.03); }
+.navBtn:active { transform: translateY(-50%) scale(0.98); }
+.navBtn:focus-visible { outline: none; box-shadow: var(--focus-ring); }
+.left  { left: 6px; }
+.right { right: 6px; }
+
+.icon {
+    font-size: 18px;
+    line-height: 1;
+}
+
+.hidden { display: none; }
+

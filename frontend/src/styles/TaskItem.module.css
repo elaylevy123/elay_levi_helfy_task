@@ -1,0 +1,75 @@
+.item {
+    display: grid;
+    grid-template-columns: 24px 1fr auto;
+    gap: 12px;
+    align-items: start;
+    padding: 12px;
+}
+.check {
+    margin-top: 6px;
+    width: 18px;
+    height: 18px;
+}
+.header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 8px;
+}
+.title {
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.titleCompleted {
+    text-decoration: line-through;
+    opacity: .75;
+}
+.description {
+    color: var(--muted);
+    margin-top: 4px;
+}
+.badges {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+.tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    font-size: 12px;
+    letter-spacing: .3px;
+    text-transform: uppercase;
+}
+.meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+    white-space: nowrap;
+}
+.createdAt {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.btnDelete {
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+    padding: 6px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform .06s ease, box-shadow .2s ease, background .2s ease, border-color .2s ease;
+}
+.btnDelete:hover { transform: translateY(-1px); }
+.btnDelete:active { transform: translateY(0); }
+.btnDelete:focus-visible { outline: none; box-shadow: var(--focus-ring); }
+
+
+
